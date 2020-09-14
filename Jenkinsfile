@@ -3,8 +3,7 @@ pipeline {
   stages {
     stage('start') {
       steps {
-        sh '''when branch \'master\'
-mvn -U clean package -X -DskipTests'''
+        sh 'mvn -U clean package -X -DskipTests'
       }
     }
 
